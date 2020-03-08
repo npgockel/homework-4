@@ -2,12 +2,11 @@
 
 document.getElementById("start").addEventListener("click", function(){
   // Show Quiz
-  var show = document.getElementsByClassName("run");
-  for (i = 0; i < show.length; i++){
-  show[i].classList.remove("d-none");
-
-  // Start Timer
-}
+  var showQuiz = document.getElementsByClassName("run");
+  for (i = 0; i < showQuiz.length; i++){
+  showQuiz[i].classList.remove("d-none");}
+displayQuestion();
+// Start Timer
 });
 
 
@@ -85,10 +84,20 @@ function displayQuestion() {
   c.textContent = questions[currentQuestion].choices[2];
   var d = document.getElementById("d");
   d.textContent = questions[currentQuestion].choices[3];
+  var answer = document.getElementById("answer");
+  answer.textContent = questions[currentQuestion].answer;
 }
-// displayQuestion();
+
 
 // Incorrect Answer Section
 
 
 // Game over section
+function gameOver() {
+var hideQuiz = document.getElementsByClassName("run");
+  for (i = 0; i < hideQuiz.length; i++){
+  hideQuiz[i].classList.add("d-none");}
+var endGame = document.getElementsByClassName("run");
+  for (i = 0; i < endGame.length; i++){
+  endGame[i].classList.add("d-none");}
+  }
