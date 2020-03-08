@@ -12,12 +12,17 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="card">
-
+          <div class="jumbotron">
+            <h1 class="display-4">Primary Healthcare Quiz</h1>
+            <p class="lead">This is a 5 question quiz testing your knowledge of basic, primary healthcare concerns, developed by a physician.</p>
+            <hr class="my-2" />
+            <button type="button" id="start" class="btn btn-success">START</button>
+            <hr class="my-2 run d-none" />
+            <div id="timer" class="run d-none"></div>
           </div>
         </div>
       </div>
-      <div id="quiz" class="row d-none">
+      <div id="quiz" class="row run d-none">
         <div class="col">
           <div class="card">
             <div class="card-body">
@@ -35,9 +40,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <div class="card">
-            
-          </div>
+          <div class="card"></div>
         </div>
       </div>
     </div>
